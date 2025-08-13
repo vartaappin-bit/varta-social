@@ -1,0 +1,11 @@
+{
+  "name": "varta-social-start",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "echo 'Use StackBlitz to preview this project.'"
+  },
+  "dependencies": {
+    "firebase": "^10.7.0"
+  }
+}
