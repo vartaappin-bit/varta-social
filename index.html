@@ -1,13 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Varta App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Varta • India's own social</title>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div id="app">Varta is loading...</div>
-  <script type="module" src="/src/main.js"></script>
+  <header class="topbar">
+    <div class="brand">🇮🇳 Varta</div>
+    <nav class="nav">
+      <button id="loginBtn" class="btn">Sign in with Google</button>
+      <button id="logoutBtn" class="btn btn-ghost" style="display:none">Logout</button>
+      <img id="avatar" class="avatar" alt="avatar" style="display:none" />
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="composer" class="card" style="display:none">
+      <textarea id="postText" placeholder="Kya chal raha hai? (What's happening?)" maxlength="240"></textarea>
+      <div class="row">
+        <span id="charCount">0/240</span>
+        <button id="postBtn" class="btn">Post</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Feed</h2>
+      <div id="feed"></div>
+    </section>
+  </main>
+
+  <footer class="footer">Made with ❤️ in Bharat • Varta</footer>
+
+  <!-- Firebase app code -->
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
